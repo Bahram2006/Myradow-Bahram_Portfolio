@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/my_portfolio/',
+  base: '/Myradow-Bahram_Portfolio/',
 })
