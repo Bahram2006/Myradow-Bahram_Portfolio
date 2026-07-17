@@ -124,7 +124,7 @@ ${
     }`}
           >
             <FaMapMarkerAlt className="text-red-500 text-sm" />
-            <span>Mary, Türkmenistan</span>
+            <span>Turkmenistan, Mary</span>
           </div>
 
           {/* Tooltip */}

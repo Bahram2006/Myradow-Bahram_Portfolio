@@ -120,8 +120,6 @@ export default function Navbar({ dark, setDark, setActive }) {
             ChatMe
           </button>
         </div>
-
-        {/* DARK MODE BUTTON */}
         {/* DARK MODE BUTTON */}
         <button
           onClick={() => setDark(!dark)}
