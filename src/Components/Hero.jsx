@@ -48,7 +48,7 @@ export default function Hero({ dark }) {
       {/* Profile Image */}
       <div className="group">
         <img
-          src={`${import.meta.env.BASE_URL}f4293632.png`}
+          src={`${import.meta.env.BASE_URL}my-image.png`}
           alt="profile"
           className="w-40 h-40 object-cover rounded-full border-2 border-gray-400 transition-all duration-300 group-hover:-translate-y-2 group-hover:border-blue-500 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]"
         />
