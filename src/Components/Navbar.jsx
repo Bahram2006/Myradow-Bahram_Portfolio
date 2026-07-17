@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function Navbar({ dark, setDark, setActive }) {
-
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function Navbar({ dark, setDark, setActive }) {
 
   return (
     <nav
-  className={`sticky top-0 z-50 w-full border-b transition-all duration-300
+      className={`sticky top-0 z-50 w-full border-b transition-all duration-300
 
   ${
     scrolled
@@ -49,65 +49,90 @@ export default function Navbar({ dark, setDark, setActive }) {
   }
 
 `}
->
+    >
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4">
-
         {/* LEFT EMPTY */}
         <div className="w-24"></div>
 
         {/* CENTER MENU */}
         <div className="flex gap-8 text-lg font-semibold">
-
           <button onClick={() => scrollToSection("story")} className={navStyle}>
             Story
           </button>
 
-          <button onClick={() => scrollToSection("journey")} className={navStyle}>
+          <button
+            onClick={() => scrollToSection("journey")}
+            className={navStyle}
+          >
             Journey
           </button>
 
-          <button onClick={() => scrollToSection("toolkit")} className={navStyle}>
+          <button
+            onClick={() => scrollToSection("toolkit")}
+            className={navStyle}
+          >
             Toolkit
           </button>
 
-          <button onClick={() => scrollToSection("workbench")} className={navStyle}>
+          <button
+            onClick={() => scrollToSection("workbench")}
+            className={navStyle}
+          >
             Workbench
           </button>
 
-          <button onClick={() => scrollToSection("github")} className={navStyle}>
+          <button
+            onClick={() => scrollToSection("github")}
+            className={navStyle}
+          >
             GitHub
           </button>
 
-          <button onClick={() => scrollToSection("findme")} className={`${navStyle} whitespace-nowrap`}>
+          <button
+            onClick={() => scrollToSection("findme")}
+            className={`${navStyle} whitespace-nowrap`}
+          >
             Find Me
           </button>
 
-          <button onClick={() => scrollToSection("languages")} className={navStyle}>
+          <button
+            onClick={() => scrollToSection("languages")}
+            className={navStyle}
+          >
             Languages
           </button>
 
-          <button onClick={() => scrollToSection("learning")} className={navStyle}>
+          <button
+            onClick={() => scrollToSection("learning")}
+            className={navStyle}
+          >
             Learning
           </button>
 
-          <button onClick={() => scrollToSection("origins")} className={navStyle}>
+          <button
+            onClick={() => scrollToSection("origins")}
+            className={navStyle}
+          >
             Origins
           </button>
 
           <button onClick={() => scrollToSection("chat")} className={navStyle}>
             ChatMe
           </button>
-
         </div>
 
         {/* DARK MODE BUTTON */}
+        {/* DARK MODE BUTTON */}
         <button
           onClick={() => setDark(!dark)}
-          className="border border-gray-600 px-3 py-1 rounded-lg hover:bg-gray-800 transition"
+          className="border border-gray-600 px-3 py-2 rounded-lg hover:bg-gray-800 transition flex items-center justify-center"
         >
-          {dark ? "🌙" : "☀️"}
+          {dark ? (
+            <FaSun className="text-yellow-400" />
+          ) : (
+            <FaMoon className="text-gray-600" />
+          )}
         </button>
-
       </div>
     </nav>
   );
