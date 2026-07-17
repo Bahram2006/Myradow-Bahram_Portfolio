@@ -10,7 +10,7 @@ export default function Workbench({ dark }) {
       title: "Clinik",
       desc: "Lukmançylyk merkezleri üçin dolandyryş ulgamy. Patient management, appointment booking we real-time hasabatlar.",
       tech: ["React", "Laravel", "MySQL"],
-      image: "/projects/clinik.png", // Bu ýerde suratyňyzy goýarsyňyz
+      image: "/projects/Clinik.png", // Bu ýerde suratyňyzy goýarsyňyz
       github: "https://github.com/Bahram2006/clinik", // Proýektiňiziň hakyky linki
       live: "#" // Eger varsa goşuň
     }
